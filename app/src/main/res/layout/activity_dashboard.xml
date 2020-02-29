@@ -7,14 +7,14 @@
     <Button
         android:id="@+id/logout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="46dp"
         android:text="@string/logout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.879" />
+        app:layout_constraintVertical_bias="0.897" />
 
     <TextView
         android:id="@+id/tvHello"
@@ -25,9 +25,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/logout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.285" />
+        app:layout_constraintVertical_bias="0.094" />
 
     <Button
         android:id="@+id/btnGetStarted"
@@ -36,8 +37,20 @@
         android:text="@string/get_started"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintVertical_bias="0.73" />
+
+    <ImageView
+        android:id="@+id/BookIcon"
+        android:layout_width="250dp"
+        android:layout_height="265dp"
+        android:contentDescription="@string/librarylogo"
+        app:layout_constraintBottom_toTopOf="@+id/btnGetStarted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHello"
+        app:layout_constraintVertical_bias="0.424"
+        app:srcCompat="@drawable/ebook" />
 </androidx.constraintlayout.widget.ConstraintLayout>

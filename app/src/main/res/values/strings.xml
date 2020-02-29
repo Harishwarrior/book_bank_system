@@ -5,7 +5,7 @@
     <string name="user_login">User Login</string>
     <string name="enter_email">Enter RollNo</string>
     <string name="enter_password">Enter Password</string>
-    <string name="log_in">LOGIN</string>
+    <string name="login">LOGIN</string>
     <string name="not_a_user_sign_up">NOT A USER? | SIGN UP</string>
     <string name="user_sign_up">User Sign Up</string>
     <string name="enter_name">Enter Name</string>
@@ -17,4 +17,5 @@
     <string name="add_book">Add Book</string>
     <string name="author_name">Author name</string>
     <string name="book_name">Book name</string>
+    <string name="librarylogo">LibraryLogo</string>
 </resources>

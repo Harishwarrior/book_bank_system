@@ -32,7 +32,7 @@ public class DashboardActivity extends AppCompatActivity {
         NameHolder = intent.getStringExtra(MainActivity.userName);
 
         // Setting up received email to TextView.
-        Name.setText(Name.getText().toString() + NameHolder);
+        Name.setText(Name.getText().toString() +" "+ NameHolder);
 
         // Adding click listener to Log Out button.
         LogOUT.setOnClickListener(new View.OnClickListener() {
