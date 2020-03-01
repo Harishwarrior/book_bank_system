@@ -15,11 +15,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String UserEmail = "";
+
     public static final String userName = "";
     Button LogInButton, RegisterButton;
     EditText Email, Password;
@@ -30,20 +29,12 @@ public class MainActivity extends AppCompatActivity {
     Cursor cursor;
     String TempPassword = "NOT_FOUND";
     String UserName;
-    URL url;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        /*Intent intent = getIntent();
-        Uri uri = intent.getData();
-        try {
-             url = new URL(uri.getScheme(), uri.getHost(), uri.getPath());
-        } catch (MalformedURLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }*/
         setContentView(R.layout.activity_main);
 
         LogInButton = findViewById(R.id.btnLogin);

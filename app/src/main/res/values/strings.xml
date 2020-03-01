@@ -18,4 +18,6 @@
     <string name="author_name">Author name</string>
     <string name="book_name">Book name</string>
     <string name="librarylogo">LibraryLogo</string>
+    <string name="search_books">Search Books</string>
+    <string name="search">Search</string>
 </resources>
