@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.209" />
+        app:layout_constraintVertical_bias="0.355" />
 
     <EditText
         android:id="@+id/etLibPass"
@@ -26,13 +26,13 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/password"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etLibUserName"
-        app:layout_constraintVertical_bias="0.08"
-        android:importantForAutofill="no" />
+        app:layout_constraintVertical_bias="0.072" />
 
     <Button
         android:id="@+id/btnLibLogin"
@@ -45,6 +45,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etLibPass"
-        app:layout_constraintVertical_bias="0.06" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549" />
+
+    <ImageView
+        android:id="@+id/ivLibrarian"
+        android:layout_width="191dp"
+        android:layout_height="191dp"
+        android:contentDescription="@string/librarian"
+        app:layout_constraintBottom_toTopOf="@+id/etLibUserName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/librarian" />
 </androidx.constraintlayout.widget.ConstraintLayout>

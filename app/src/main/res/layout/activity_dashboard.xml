@@ -14,7 +14,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.897" />
+        app:layout_constraintVertical_bias="0.884" />
 
     <TextView
         android:id="@+id/tvHello"
@@ -39,11 +39,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73" />
+        app:layout_constraintVertical_bias="0.721" />
 
     <ImageView
         android:id="@+id/BookIcon"
-        android:layout_width="250dp"
+        android:layout_width="265dp"
         android:layout_height="265dp"
         android:contentDescription="@string/librarylogo"
         app:layout_constraintBottom_toTopOf="@+id/btnGetStarted"
