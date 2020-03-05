@@ -22,4 +22,7 @@
     <string name="search">Search</string>
     <string name="librarian">librarian</string>
     <string name="book">Book</string>
+    <string name="book_icon">book</string>
+    <string name="bookname">harish</string>
+    <string name="author">hari</string>
 </resources>

@@ -14,9 +14,9 @@ import java.util.List;
 
 class SearchViewHolder extends RecyclerView.ViewHolder {
 
-    public TextView bookName, authorName;
+    TextView bookName, authorName;
 
-    public SearchViewHolder(@NonNull View itemView) {
+    SearchViewHolder(@NonNull View itemView) {
         super(itemView);
         bookName = itemView.findViewById(R.id.bookName);
         authorName = itemView.findViewById(R.id.authorName);

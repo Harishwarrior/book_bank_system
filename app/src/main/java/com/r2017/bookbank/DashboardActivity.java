@@ -32,7 +32,7 @@ public class DashboardActivity extends AppCompatActivity {
         NameHolder = intent.getStringExtra(MainActivity.userName);
 
         // Setting up received email to TextView.
-        Name.setText(Name.getText().toString() +" "+ NameHolder);
+        Name.setText(Name.getText().toString() + " " + NameHolder);
 
         // Adding click listener to Log Out button.
         LogOUT.setOnClickListener(new View.OnClickListener() {
@@ -49,7 +49,7 @@ public class DashboardActivity extends AppCompatActivity {
         GetStarted.setOnClickListener(new View.OnClickListener() {
                                           @Override
                                           public void onClick(View v) {
-                                              Intent intent1=new Intent(DashboardActivity.this,HomeActivity.class);
+                                              Intent intent1 = new Intent(DashboardActivity.this, HomeActivity.class);
                                               startActivity(intent1);
 
                                           }

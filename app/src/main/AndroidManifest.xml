@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LibrarianEntry"></activity>
+        <activity android:name=".LibrarianEntry" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".LibrarianLogin" />
         <activity android:name=".DashboardActivity" />
@@ -24,5 +24,6 @@
             </intent-filter>
         </activity>
     </application>
+
 
 </manifest>

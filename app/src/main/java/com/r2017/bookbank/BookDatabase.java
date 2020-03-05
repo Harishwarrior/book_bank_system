@@ -12,8 +12,9 @@ import java.util.List;
 
 class BookDatabase extends SQLiteAssetHelper {
 
-    private static final String DB_NAME = "AndroidJSonDataBase.db";
+    private static final String DB_NAME = "AndroidJSonDataBase";
     private static final int DB_VER = 1;
+
 
     BookDatabase(Context context) {
         super(context, DB_NAME, null, DB_VER);

@@ -50,44 +50,42 @@ public class LibrarianEntry extends AppCompatActivity {
 
     }
 
-    public void SQLiteDataBaseBuild(){
+    public void SQLiteDataBaseBuild() {
 
         sqLiteDatabaseObj = openOrCreateDatabase("AndroidJSonDataBase", Context.MODE_PRIVATE, null);
 
     }
 
-    public void SQLiteTableBuild(){
+    public void SQLiteTableBuild() {
 
         sqLiteDatabaseObj.execSQL("CREATE TABLE IF NOT EXISTS AndroidJSonTable(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, Book_name VARCHAR, Author_name VARCHAR);");
 
     }
 
-    public void CheckEditTextStatus(){
+    public void CheckEditTextStatus() {
 
-        BookHolder = editTextBookName.getText().toString() ;
+        BookHolder = editTextBookName.getText().toString();
         AuthorHolder = editTextAuthorName.getText().toString();
 
         EditTextEmptyHold = !TextUtils.isEmpty(BookHolder) && !TextUtils.isEmpty(AuthorHolder);
     }
 
-    public void InsertDataIntoSQLiteDatabase(){
+    public void InsertDataIntoSQLiteDatabase() {
 
-        if(EditTextEmptyHold)
-        {
+        if (EditTextEmptyHold) {
 
-            SQLiteDataBaseQueryHolder = "INSERT INTO AndroidJSonTable (Book_name,Author_name) VALUES('"+BookHolder+"', '"+AuthorHolder+"');";
+            SQLiteDataBaseQueryHolder = "INSERT INTO AndroidJSonTable (Book_name,Author_name) VALUES('" + BookHolder + "', '" + AuthorHolder + "');";
 
             sqLiteDatabaseObj.execSQL(SQLiteDataBaseQueryHolder);
 
-            Toast.makeText(LibrarianEntry.this,"Data Inserted Successfully", Toast.LENGTH_LONG).show();
+            Toast.makeText(LibrarianEntry.this, "Data Inserted Successfully", Toast.LENGTH_LONG).show();
 
-        }
-        else
+        } else
             Toast.makeText(LibrarianEntry.this, "Please Fill All The Required Fields.", Toast.LENGTH_LONG).show();
 
     }
 
-    public void EmptyEditTextAfterDataInsert(){
+    public void EmptyEditTextAfterDataInsert() {
 
         editTextBookName.getText().clear();
 

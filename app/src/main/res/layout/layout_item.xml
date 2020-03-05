@@ -19,6 +19,7 @@
         <ImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:contentDescription="@string/book_icon"
             android:src="@drawable/ic_library_books_black_24dp" />
 
         <LinearLayout
@@ -33,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:gravity="center_vertical|start"
-                android:text="harish"
+                android:text="@string/bookname"
                 android:textAllCaps="true"
                 android:textStyle="bold" />
 
@@ -43,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:gravity="center_vertical|start"
-                android:text="hari"
+                android:text="@string/author"
                 android:textStyle="italic" />
 
 

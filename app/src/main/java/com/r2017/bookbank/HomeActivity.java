@@ -90,6 +90,7 @@ public class HomeActivity extends AppCompatActivity {
 
         //init adapter set all result
         adapter = new SearchAdapter(this, database.getBook());
+        recyclerView.setAdapter(adapter);
 
 
     }
