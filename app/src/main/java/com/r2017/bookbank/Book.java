@@ -4,12 +4,6 @@ public class Book {
     public int id;
     private String bookName, authorName;
 
-    public Book(int id, String bookName, String authorName) {
-        this.id = id;
-        this.bookName = bookName;
-        this.authorName = authorName;
-    }
-
     Book() {
 
     }
