@@ -18,7 +18,6 @@ public class HomeActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
     SearchAdapter adapter;
-
     MaterialSearchBar materialSearchBar;
     List<String> suggestList = new ArrayList<>();
 

@@ -6,7 +6,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class SQLiteHelper extends SQLiteOpenHelper {
 
-
     static final String TABLE_NAME = "UserTable";
     static final String Table_Column_ID = "id";
     static final String Table_Column_1_Name = "name";
