@@ -1,7 +1,6 @@
 package com.r2017.bookbank;
 
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,11 +25,9 @@ class SearchViewHolder extends RecyclerView.ViewHolder {
 
 public class SearchAdapter extends RecyclerView.Adapter<SearchViewHolder> {
 
-    private Context context;
     private List<Book> books;
 
-    SearchAdapter(Context context, List<Book> books) {
-        this.context = context;
+    SearchAdapter(List<Book> books) {
         this.books = books;
     }
 

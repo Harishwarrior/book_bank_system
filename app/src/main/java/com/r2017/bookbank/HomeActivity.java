@@ -89,14 +89,14 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         //init adapter set all result
-        adapter = new SearchAdapter(this, database.getBook());
+        adapter = new SearchAdapter(database.getBook());
         recyclerView.setAdapter(adapter);
 
 
     }
 
     private void startSearch(String text) {
-        adapter = new SearchAdapter(this, database.getBookByName(text));
+        adapter = new SearchAdapter(database.getBookByName(text));
         recyclerView.setAdapter(adapter);
 
     }
