@@ -17,8 +17,9 @@
     <string name="add_book">Add Book</string>
     <string name="author_name">Author name</string>
     <string name="book_name">Book name</string>
-    <string name="librarylogo">LibraryLogo</string>
+    <string name="library_logo">LibraryLogo</string>
     <string name="search_books">Search Books</string>
     <string name="search">Search</string>
     <string name="librarian">librarian</string>
+    <string name="book">Book</string>
 </resources>
