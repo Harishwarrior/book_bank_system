@@ -2,7 +2,7 @@ package com.r2017.bookbank;
 
 public class Book {
     public int id;
-    public String bookName, authorName;
+    private String bookName, authorName;
 
     public Book(int id, String bookName, String authorName) {
         this.id = id;
@@ -10,7 +10,7 @@ public class Book {
         this.authorName = authorName;
     }
 
-    public Book() {
+    Book() {
 
     }
 
@@ -22,19 +22,19 @@ public class Book {
         this.id = id;
     }
 
-    public String getBookName() {
+    String getBookName() {
         return bookName;
     }
 
-    public void setBookName(String bookName) {
+    void setBookName(String bookName) {
         this.bookName = bookName;
     }
 
-    public String getAuthorName() {
+    String getAuthorName() {
         return authorName;
     }
 
-    public void setAuthorName(String authorName) {
+    void setAuthorName(String authorName) {
         this.authorName = authorName;
     }
 }
