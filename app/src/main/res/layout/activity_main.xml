@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -8,20 +8,36 @@
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
+    android:orientation="vertical"
     tools:context="com.r2017.bookbank.MainActivity">
 
     <TextView
         android:id="@+id/tvTopText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="@string/user_login"
+        android:layout_gravity="center"
         android:textColor="#000"
+        android:fontFamily="@font/google"
+        android:text="@string/login"
         android:textSize="20sp" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/enter_rollno">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRollNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/google" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--<EditText
         android:id="@+id/etRollNo"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -30,12 +46,27 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/enter_email"
+        android:hint="@string/enter_rollno"
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
-        android:textColor="#000" />
+        android:textColor="#000" />-->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/password">
 
-    <EditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/google"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--<EditText
         android:id="@+id/etPass"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -44,25 +75,29 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:gravity="center"
-        android:hint="@string/enter_password"
+        android:hint="@string/password"
         android:importantForAutofill="no"
         android:inputType="textPassword"
-        android:textColor="#000" />
+        android:textColor="#000" />-->
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="fill_parent"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etPass"
         android:layout_marginTop="19dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/google"
         android:text="@string/login" />
 
     <Button
         android:id="@+id/btnSignUp"
-        android:layout_width="fill_parent"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnLogin"
         android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/google"
         android:text="@string/not_a_user_sign_up" />
 
-</RelativeLayout>
+</LinearLayout>

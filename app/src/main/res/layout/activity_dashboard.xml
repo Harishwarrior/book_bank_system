@@ -14,6 +14,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        style="?attr/materialButtonOutlinedStyle"
+        android:fontFamily="@font/google"
         app:layout_constraintVertical_bias="0.865" />
 
     <TextView
@@ -28,6 +30,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/google"
         app:layout_constraintVertical_bias="0.094" />
 
     <Button
@@ -39,6 +42,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        style="?attr/materialButtonOutlinedStyle"
+        android:fontFamily="@font/google"
         app:layout_constraintVertical_bias="0.735" />
 
     <ImageView

@@ -1,15 +1,12 @@
 <resources>
     <string name="app_name">Bookbank</string>
     <string name="hello">Hello</string>
-    <string name="logout">LOGOUT</string>
+    <string name="logout">Logout</string>
     <string name="user_login">User Login</string>
-    <string name="enter_email">Enter RollNo</string>
-    <string name="enter_password">Enter Password</string>
-    <string name="login">LOGIN</string>
-    <string name="not_a_user_sign_up">SIGN UP</string>
-    <string name="user_sign_up">User Sign Up</string>
-    <string name="enter_name">Enter Name</string>
-    <string name="sign_up">SIGN UP</string>
+    <string name="enter_rollno">Roll no</string>
+    <string name="login">Login</string>
+    <string name="not_a_user_sign_up">Sign up</string>
+    <string name="sign_up">Sign up</string>
     <string name="get_started">Get Started</string>
     <string name="Librarian">Librarian</string>
     <string name="username">Username</string>
