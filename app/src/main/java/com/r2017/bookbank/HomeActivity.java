@@ -1,9 +1,13 @@
 package com.r2017.bookbank;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Menu;
+import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -92,6 +96,19 @@ public class HomeActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.request, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        Intent intent3 = new Intent(HomeActivity.this, RequestActivity.class);
+        startActivity(intent3);
+        return false;
     }
 
     private void startSearch(String text) {
