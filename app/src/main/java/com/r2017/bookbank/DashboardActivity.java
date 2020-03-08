@@ -42,7 +42,7 @@ public class DashboardActivity extends AppCompatActivity {
                 //Finishing current DashBoard activity on button click.
                 finish();
 
-                Toast.makeText(DashboardActivity.this, "Log Out Successful", Toast.LENGTH_LONG).show();
+                Toast.makeText(DashboardActivity.this, "Logout Successful", Toast.LENGTH_SHORT).show();
 
             }
         });

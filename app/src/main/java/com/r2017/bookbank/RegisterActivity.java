@@ -101,7 +101,7 @@ public class RegisterActivity extends AppCompatActivity {
             sqLiteDatabaseObj.close();
 
             // Printing toast message after done inserting.
-            Toast.makeText(RegisterActivity.this, "User Registered Successfully", Toast.LENGTH_LONG).show();
+            Toast.makeText(RegisterActivity.this, "User Registered Successfully", Toast.LENGTH_SHORT).show();
 
 
         }
@@ -109,7 +109,7 @@ public class RegisterActivity extends AppCompatActivity {
         else {
 
             // Printing toast message if any of EditText is empty.
-            Toast.makeText(RegisterActivity.this, "Please Fill All The Required Fields.", Toast.LENGTH_LONG).show();
+            Toast.makeText(RegisterActivity.this, "Please Fill All The Required Fields.", Toast.LENGTH_SHORT).show();
 
         }
 
@@ -173,7 +173,7 @@ public class RegisterActivity extends AppCompatActivity {
         if (F_Result.equalsIgnoreCase("Roll no found")) {
 
             // If email is exists then toast msg will display.
-            Toast.makeText(RegisterActivity.this, "Roll no Already Exists", Toast.LENGTH_LONG).show();
+            Toast.makeText(RegisterActivity.this, "Roll no Already Exists", Toast.LENGTH_SHORT).show();
 
         } else {
 

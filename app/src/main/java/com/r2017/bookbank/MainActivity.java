@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
 
             //If any of login EditText empty then this block will be executed.
-            Toast.makeText(MainActivity.this, "Please Enter UserName or Password.", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, "Please Enter UserName or Password.", Toast.LENGTH_SHORT).show();
 
         }
 
@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (TempPassword.equalsIgnoreCase(PasswordHolder)) {
 
-            Toast.makeText(MainActivity.this, "Login Successfully", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
 
             // Going to Dashboard activity after login success message.
             Intent intent = new Intent(MainActivity.this, DashboardActivity.class);
@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
 
         } else {
 
-            Toast.makeText(MainActivity.this, "UserName or Password is Wrong, Please Try Again.", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, "UserName or Password is Wrong, Please Try Again.", Toast.LENGTH_SHORT).show();
 
         }
         TempPassword = "NOT_FOUND";
