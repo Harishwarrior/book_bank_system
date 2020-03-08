@@ -37,19 +37,7 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!--<EditText
-        android:id="@+id/etRollNo"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvTopText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="@string/enter_rollno"
-        android:importantForAutofill="no"
-        android:inputType="textEmailAddress"
-        android:textColor="#000" />-->
+
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
@@ -66,19 +54,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!--<EditText
-        android:id="@+id/etPass"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/etRollNo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="@string/password"
-        android:importantForAutofill="no"
-        android:inputType="textPassword"
-        android:textColor="#000" />-->
 
     <Button
         android:id="@+id/btnLogin"
