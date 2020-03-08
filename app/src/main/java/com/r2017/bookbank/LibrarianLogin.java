@@ -36,10 +36,11 @@ public class LibrarianLogin extends AppCompatActivity {
     public void validate(String id, String pass) {
         if ((id.equals("admin")) && (pass.equals("aec@123"))) {
             Intent intent = new Intent(LibrarianLogin.this, LibrarianEntry.class);
+            Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
             startActivity(intent);
 
         } else {
-            Toast.makeText(this, "Username or password incorrect", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Username or password incorrect", Toast.LENGTH_SHORT).show();
         }
     }
 
