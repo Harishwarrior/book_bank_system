@@ -20,7 +20,7 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:contentDescription="@string/book_icon"
-            android:src="@drawable/ic_library_books_black_24dp" />
+            android:src="@drawable/coding" />
 
         <LinearLayout
             android:layout_width="0dp"
